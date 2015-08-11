@@ -1,0 +1,133 @@
+.l-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // all screens
+    .col{ padding: 0 1em 0 1em; flex: none; box-sizing: border-box; }
+    .all-1{ width: 8.3333333333%; }
+    .all-2{ width: 16.6666666667%; }
+    .all-3{ width: 25%; }
+    .all-4{ width: 33.3333333333%; }
+    .all-5{ width: 41.6666666667%; }
+    .all-6{ width: 50%; }
+    .all-7{ width: 58.3333333333%; }
+    .all-8{ width: 66.6666666666%; }
+    .all-9{ width: 75%; }
+    .all-10{ width: 83.3333333333%; }
+    .all-11{ width: 91.6666666667%; }
+    .all-12{ width: 100%; }
+    .smo-1,.smo-2,.smo-3,.smo-4,.smo-5,.smo-6,.smo-7,.smo-8,.smo-9,.smo-10,.smo-11,.smo-12,
+    .smu-1,.smu-2,.smu-3,.smu-4,.smu-5,.smu-6,.smu-7,.smu-8,.smu-9,.smu-10,.smu-11,.smu-12,
+    .meo-1,.meo-2,.meo-3,.meo-4,.meo-5,.meo-6,.meo-7,.meo-8,.meo-9,.meo-10,.meo-11,.meo-12,
+    .meu-1,.meu-2,.meu-3,.meu-4,.meu-5,.meu-6,.meu-7,.meu-8,.meu-9,.meu-10,.meu-11,.meu-12,
+    .lao-1,.lao-2,.lao-3,.lao-4,.lao-5,.lao-6,.lao-7,.lao-8,.lao-9,.lao-10,.lao-11,.lao-12,
+    .lau-1,.lau-2,.lau-3,.lau-4,.lau-5,.lau-6,.lau-7,.lau-8,.lau-9,.lau-10,.lau-11,.lau-12,
+    .gi-1,.gi-2,.gi-3,.gi-4,.gi-5,.gi-6,.gi-7,.gi-8,.gi-9,.gi-10,.gi-11,.gi-12{ width: 100%; }
+    // Mobile screens
+    @media only screen and (max-width: 40em) {
+           } 
+    // Small screens and upper
+    @media only screen and (min-width: 40.063em) {
+        .smu-1{ width: 8.3333333333%; }
+        .smu-2{ width: 16.6666666667%; }
+        .smu-3{ width: 25%; }
+        .smu-4{ width: 33.3333333333%; }
+        .smu-5{ width: 41.6666666667%; }
+        .smu-6{ width: 50%; }
+        .smu-7{ width: 58.3333333333%; }
+        .smu-8{ width: 66.6666666666%; }
+        .smu-9{ width: 75%; }
+        .smu-10{ width: 83.3333333333%; }
+        .smu-11{ width: 91.6666666667%; }
+        .smu-12{ width: 100%; }
+     } 
+    // Small screens only
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .smo-1{ width: 8.3333333333%; }
+        .smo-2{ width: 16.6666666667%; }
+        .smo-3{ width: 25%; }
+        .smo-4{ width: 33.3333333333%; }
+        .smo-5{ width: 41.6666666667%; }
+        .smo-6{ width: 50%; }
+        .smo-7{ width: 58.3333333333%; }
+        .smo-8{ width: 66.6666666666%; }
+        .smo-9{ width: 75%; }
+        .smo-10{ width: 83.3333333333%; }
+        .smo-11{ width: 91.6666666667%; }
+        .smo-12{ width: 100%; }
+    }
+    // Medium screens and upper
+    @media only screen and (min-width: 64.063em) {
+        .meu-1{ width: 8.3333333333%; }
+        .meu-2{ width: 16.6666666667%; }
+        .meu-3{ width: 25%; }
+        .meu-4{ width: 33.3333333333%; }
+        .meu-5{ width: 41.6666666667%; }
+        .meu-6{ width: 50%; }
+        .meu-7{ width: 58.3333333333%; }
+        .meu-8{ width: 66.6666666666%; }
+        .meu-9{ width: 75%; }
+        .meu-10{ width: 83.3333333333%; }
+        .meu-11{ width: 91.6666666667%; }
+        .meu-12{ width: 100%; }
+    }
+    // Medium screens only
+    @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .meo-1{ width: 8.3333333333%; }
+        .meo-2{ width: 16.6666666667%; }
+        .meo-3{ width: 25%; }
+        .meo-4{ width: 33.3333333333%; }
+        .meo-5{ width: 41.6666666667%; }
+        .meo-6{ width: 50%; }
+        .meo-7{ width: 58.3333333333%; }
+        .meo-8{ width: 66.6666666666%; }
+        .meo-9{ width: 75%; }
+        .meo-10{ width: 83.3333333333%; }
+        .meo-11{ width: 91.6666666667%; }
+        .meo-12{ width: 100%; }
+    }
+    // Large screens and upper
+    @media only screen and (min-width: 90.063em) {
+        .lau-1{ width: 8.3333333333%; }
+        .lau-2{ width: 16.6666666667%; }
+        .lau-3{ width: 25%; }
+        .lau-4{ width: 33.3333333333%; }
+        .lau-5{ width: 41.6666666667%; }
+        .lau-6{ width: 50%; }
+        .lau-7{ width: 58.3333333333%; }
+        .lau-8{ width: 66.6666666666%; }
+        .lau-9{ width: 75%; }
+        .lau-10{ width: 83.3333333333%; }
+        .lau-11{ width: 91.6666666667%; }
+        .lau-12{ width: 100%; }
+    }
+    // Large screens only
+    @media only screen and (min-width: 90.063em) and (max-width: 120em) {
+        .lao-1{ width: 8.3333333333%; }
+        .lao-2{ width: 16.6666666667%; }
+        .lao-3{ width: 25%; }
+        .lao-4{ width: 33.3333333333%; }
+        .lao-5{ width: 41.6666666667%; }
+        .lao-6{ width: 50%; }
+        .lao-7{ width: 58.3333333333%; }
+        .lao-8{ width: 66.6666666666%; }
+        .lao-9{ width: 75%; }
+        .lao-10{ width: 83.3333333333%; }
+        .lao-11{ width: 91.6666666667%; }
+        .lao-12{ width: 100%; }}
+    // Gigantic screens and upper
+    @media only screen and (min-width: 120.063em) {
+        .gi-1{ width: 8.3333333333%; }
+        .gi-2{ width: 16.6666666667%; }
+        .gi-3{ width: 25%; }
+        .gi-4{ width: 33.3333333333%; }
+        .gi-5{ width: 41.6666666667%; }
+        .gi-6{ width: 50%; }
+        .gi-7{ width: 58.3333333333%; }
+        .gi-8{ width: 66.6666666666%; }
+        .gi-9{ width: 75%; }
+        .gi-10{ width: 83.3333333333%; }
+        .gi-11{ width: 91.6666666667%; }
+        .gi-12{ width: 100%; }
+    }
+}
