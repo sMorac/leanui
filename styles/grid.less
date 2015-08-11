@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     // all screens
-    .col{ padding: 0 1em 0 1em; flex: none; box-sizing: border-box; }
+    .col{ padding-left: 2em; flex: none; box-sizing: border-box; float: left; }
     .all-1{ width: 8.3333333333%; }
     .all-2{ width: 16.6666666667%; }
     .all-3{ width: 25%; }
@@ -16,6 +16,20 @@
     .all-10{ width: 83.3333333333%; }
     .all-11{ width: 91.6666666667%; }
     .all-12{ width: 100%; }
+
+    .offset-1{ margin-left: 8.3333333333%; }
+    .offset-2{ margin-left: 16.6666666667%; }
+    .offset-3{ margin-left: 25%; }
+    .offset-4{ margin-left: 33.3333333333%; }
+    .offset-5{ margin-left: 41.6666666667%; }
+    .offset-6{ margin-left: 50%; }
+    .offset-7{ margin-left: 58.3333333333%; }
+    .offset-8{ margin-left: 66.6666666666%; }
+    .offset-9{ margin-left: 75%; }
+    .offset-10{ margin-left: 83.3333333333%; }
+    .offset-11{ margin-left: 91.6666666667%; }
+
+
     .smo-1,.smo-2,.smo-3,.smo-4,.smo-5,.smo-6,.smo-7,.smo-8,.smo-9,.smo-10,.smo-11,.smo-12,
     .smu-1,.smu-2,.smu-3,.smu-4,.smu-5,.smu-6,.smu-7,.smu-8,.smu-9,.smu-10,.smu-11,.smu-12,
     .meo-1,.meo-2,.meo-3,.meo-4,.meo-5,.meo-6,.meo-7,.meo-8,.meo-9,.meo-10,.meo-11,.meo-12,
@@ -40,7 +54,18 @@
         .smu-10{ width: 83.3333333333%; }
         .smu-11{ width: 91.6666666667%; }
         .smu-12{ width: 100%; }
-     } 
+        .smu-offset-1{ margin-left: 8.3333333333%; }
+        .smu-offset-2{ margin-left: 16.6666666667%; }
+        .smu-offset-3{ margin-left: 25%; }
+        .smu-offset-4{ margin-left: 33.3333333333%; }
+        .smu-offset-5{ margin-left: 41.6666666667%; }
+        .smu-offset-6{ margin-left: 50%; }
+        .smu-offset-7{ margin-left: 58.3333333333%; }
+        .smu-offset-8{ margin-left: 66.6666666666%; }
+        .smu-offset-9{ margin-left: 75%; }
+        .smu-offset-10{ margin-left: 83.3333333333%; }
+        .smu-offset-11{ margin-left: 91.6666666667%; }
+    } 
     // Small screens only
     @media only screen and (min-width: 40.063em) and (max-width: 64em) {
         .smo-1{ width: 8.3333333333%; }
@@ -55,6 +80,17 @@
         .smo-10{ width: 83.3333333333%; }
         .smo-11{ width: 91.6666666667%; }
         .smo-12{ width: 100%; }
+        .smo-offset-1{ margin-left: 8.3333333333%; }
+        .smo-offset-2{ margin-left: 16.6666666667%; }
+        .smo-offset-3{ margin-left: 25%; }
+        .smo-offset-4{ margin-left: 33.3333333333%; }
+        .smo-offset-5{ margin-left: 41.6666666667%; }
+        .smo-offset-6{ margin-left: 50%; }
+        .smo-offset-7{ margin-left: 58.3333333333%; }
+        .smo-offset-8{ margin-left: 66.6666666666%; }
+        .smo-offset-9{ margin-left: 75%; }
+        .smo-offset-10{ margin-left: 83.3333333333%; }
+        .smo-offset-11{ margin-left: 91.6666666667%; }
     }
     // Medium screens and upper
     @media only screen and (min-width: 64.063em) {
@@ -70,6 +106,17 @@
         .meu-10{ width: 83.3333333333%; }
         .meu-11{ width: 91.6666666667%; }
         .meu-12{ width: 100%; }
+        .meu-offset-1{ margin-left: 8.3333333333%; }
+        .meu-offset-2{ margin-left: 16.6666666667%; }
+        .meu-offset-3{ margin-left: 25%; }
+        .meu-offset-4{ margin-left: 33.3333333333%; }
+        .meu-offset-5{ margin-left: 41.6666666667%; }
+        .meu-offset-6{ margin-left: 50%; }
+        .meu-offset-7{ margin-left: 58.3333333333%; }
+        .meu-offset-8{ margin-left: 66.6666666666%; }
+        .meu-offset-9{ margin-left: 75%; }
+        .meu-offset-10{ margin-left: 83.3333333333%; }
+        .meu-offset-11{ margin-left: 91.6666666667%; }
     }
     // Medium screens only
     @media only screen and (min-width: 64.063em) and (max-width: 90em) {
@@ -85,6 +132,17 @@
         .meo-10{ width: 83.3333333333%; }
         .meo-11{ width: 91.6666666667%; }
         .meo-12{ width: 100%; }
+        .meo-offset-1{ margin-left: 8.3333333333%; }
+        .meo-offset-2{ margin-left: 16.6666666667%; }
+        .meo-offset-3{ margin-left: 25%; }
+        .meo-offset-4{ margin-left: 33.3333333333%; }
+        .meo-offset-5{ margin-left: 41.6666666667%; }
+        .meo-offset-6{ margin-left: 50%; }
+        .meo-offset-7{ margin-left: 58.3333333333%; }
+        .meo-offset-8{ margin-left: 66.6666666666%; }
+        .meo-offset-9{ margin-left: 75%; }
+        .meo-offset-10{ margin-left: 83.3333333333%; }
+        .meo-offset-11{ margin-left: 91.6666666667%; }    
     }
     // Large screens and upper
     @media only screen and (min-width: 90.063em) {
@@ -100,6 +158,17 @@
         .lau-10{ width: 83.3333333333%; }
         .lau-11{ width: 91.6666666667%; }
         .lau-12{ width: 100%; }
+        .lau-offset-1{ margin-left: 8.3333333333%; }
+        .lau-offset-2{ margin-left: 16.6666666667%; }
+        .lau-offset-3{ margin-left: 25%; }
+        .lau-offset-4{ margin-left: 33.3333333333%; }
+        .lau-offset-5{ margin-left: 41.6666666667%; }
+        .lau-offset-6{ margin-left: 50%; }
+        .lau-offset-7{ margin-left: 58.3333333333%; }
+        .lau-offset-8{ margin-left: 66.6666666666%; }
+        .lau-offset-9{ margin-left: 75%; }
+        .lau-offset-10{ margin-left: 83.3333333333%; }
+        .lau-offset-11{ margin-left: 91.6666666667%; } 
     }
     // Large screens only
     @media only screen and (min-width: 90.063em) and (max-width: 120em) {
@@ -114,7 +183,19 @@
         .lao-9{ width: 75%; }
         .lao-10{ width: 83.3333333333%; }
         .lao-11{ width: 91.6666666667%; }
-        .lao-12{ width: 100%; }}
+        .lao-12{ width: 100%; }
+        .lao-offset-1{ margin-left: 8.3333333333%; }
+        .lao-offset-2{ margin-left: 16.6666666667%; }
+        .lao-offset-3{ margin-left: 25%; }
+        .lao-offset-4{ margin-left: 33.3333333333%; }
+        .lao-offset-5{ margin-left: 41.6666666667%; }
+        .lao-offset-6{ margin-left: 50%; }
+        .lao-offset-7{ margin-left: 58.3333333333%; }
+        .lao-offset-8{ margin-left: 66.6666666666%; }
+        .lao-offset-9{ margin-left: 75%; }
+        .lao-offset-10{ margin-left: 83.3333333333%; }
+        .lao-offset-11{ margin-left: 91.6666666667%; } 
+    }
     // Gigantic screens and upper
     @media only screen and (min-width: 120.063em) {
         .gi-1{ width: 8.3333333333%; }
@@ -129,5 +210,16 @@
         .gi-10{ width: 83.3333333333%; }
         .gi-11{ width: 91.6666666667%; }
         .gi-12{ width: 100%; }
+        .gi-offset-1{ margin-left: 8.3333333333%; }
+        .gi-offset-2{ margin-left: 16.6666666667%; }
+        .gi-offset-3{ margin-left: 25%; }
+        .gi-offset-4{ margin-left: 33.3333333333%; }
+        .gi-offset-5{ margin-left: 41.6666666667%; }
+        .gi-offset-6{ margin-left: 50%; }
+        .gi-offset-7{ margin-left: 58.3333333333%; }
+        .gi-offset-8{ margin-left: 66.6666666666%; }
+        .gi-offset-9{ margin-left: 75%; }
+        .gi-offset-10{ margin-left: 83.3333333333%; }
+        .gi-offset-11{ margin-left: 91.6666666667%; } 
     }
 }
