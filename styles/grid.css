@@ -45,3 +45,9 @@
 .l-grid .all-12 {
   width: 100%;
 }
+.l-grid.no-gutter .col {
+  padding-left: 0;
+}
+.l-grid.small-gutter .col {
+  padding-left: 1em;
+}
