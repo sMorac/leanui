@@ -2,9 +2,7 @@
 // -------- normalize.css ---------
 @import (inline) "normalize.css";
 
-// ------------ Grid --------------
-@col-number: 12;
-
+// -------- Responsiveness --------
 @small-upper-on: false; 
 @small-only-on: false; 
 @medium-upper-on: false; 
@@ -12,7 +10,12 @@
 @large-upper-on: false;
 @large-only-on: false;
 @gigantic-on: false;
-
+// ------------ Grid --------------
+@col-number: 12;
 @offset-support: false; 
 
 @import "grid.less";
+// --------- Typography -----------
+@small-headings-on: false;
+@import "typography.less";
+

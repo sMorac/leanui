@@ -1,7 +1,5 @@
 
-@import (inline) "normalize.css";
 
-@col-number: 12;
 
 // responsive modes
 @small-upper-on: false; 
@@ -29,7 +27,7 @@
 }
 
 
-.l-grid{
+.lean-grid{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -77,6 +75,6 @@
         & when(@gigantic-on = true){.generate-columns(gi) } ;
     }
 }
-.l-grid.no-gutter .col{padding-left: 0;}
-.l-grid.small-gutter .col{padding-left: 1em;}
+.lean-grid.no-gutter .col{padding-left: 0;}
+.lean-grid.small-gutter .col{padding-left: 1em;}
 
