@@ -7,12 +7,13 @@
 @large-only-on: false;
 @gigantic-on: false;
 @activate-small-and-upper: true; 
-@activate-small-and-upper: true; 
+@activate-small-and-upper: true;
+@offset-support: false; 
 .generate-columns(@selector, @i: 1) when (@i =< @col-number) {
     .@{selector}-@{i} {
         width: (@i * 100% / @col-number);
     }
-    .@{selector}-offset-@{i} when (@i < @col-number){
+    .@{selector}-offset-@{i} when (@i < @col-number) when (@offset-support = true){
         margin-left: (@i * 100% / @col-number); 
     }
     .generate-columns(@selector,(@i+1));

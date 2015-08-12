@@ -12,68 +12,35 @@
 .l-grid .all-1 {
   width: 8.33333333%;
 }
-.l-grid .all-offset-1 {
-  margin-left: 8.33333333%;
-}
 .l-grid .all-2 {
   width: 16.66666667%;
-}
-.l-grid .all-offset-2 {
-  margin-left: 16.66666667%;
 }
 .l-grid .all-3 {
   width: 25%;
 }
-.l-grid .all-offset-3 {
-  margin-left: 25%;
-}
 .l-grid .all-4 {
   width: 33.33333333%;
-}
-.l-grid .all-offset-4 {
-  margin-left: 33.33333333%;
 }
 .l-grid .all-5 {
   width: 41.66666667%;
 }
-.l-grid .all-offset-5 {
-  margin-left: 41.66666667%;
-}
 .l-grid .all-6 {
   width: 50%;
-}
-.l-grid .all-offset-6 {
-  margin-left: 50%;
 }
 .l-grid .all-7 {
   width: 58.33333333%;
 }
-.l-grid .all-offset-7 {
-  margin-left: 58.33333333%;
-}
 .l-grid .all-8 {
   width: 66.66666667%;
-}
-.l-grid .all-offset-8 {
-  margin-left: 66.66666667%;
 }
 .l-grid .all-9 {
   width: 75%;
 }
-.l-grid .all-offset-9 {
-  margin-left: 75%;
-}
 .l-grid .all-10 {
   width: 83.33333333%;
 }
-.l-grid .all-offset-10 {
-  margin-left: 83.33333333%;
-}
 .l-grid .all-11 {
   width: 91.66666667%;
-}
-.l-grid .all-offset-11 {
-  margin-left: 91.66666667%;
 }
 .l-grid .all-12 {
   width: 100%;
