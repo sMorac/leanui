@@ -1,4 +1,9 @@
+
+@import (inline) "normalize.css";
+
 @col-number: 12;
+
+// responsive modes
 @small-upper-on: false; 
 @small-only-on: false; 
 @medium-upper-on: false; 
@@ -6,9 +11,9 @@
 @large-upper-on: false;
 @large-only-on: false;
 @gigantic-on: false;
-@activate-small-and-upper: true; 
-@activate-small-and-upper: true;
+
 @offset-support: false; 
+
 .generate-columns(@selector, @i: 1) when (@i =< @col-number) {
     .@{selector}-@{i} {
         width: (@i * 100% / @col-number);
