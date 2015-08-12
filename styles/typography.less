@@ -40,8 +40,8 @@
     .generate-headings();
     // Mobile and small screens
     @media only screen and (max-width: 64em) {
-        h*{ line-height: 1.3; }
         & when(@small-headings-on = true){
+            h*{ line-height: 1.3; }
             .generate-headings-small();
         };
     }
