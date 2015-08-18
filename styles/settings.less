@@ -2,6 +2,9 @@
 // -------- normalize.css ---------
 @import (inline) "normalize.css";
 
+// ------------- Basic ------------
+@body-max-width: 1440px; 
+@import "basics.less"; 
 // -------- Responsiveness --------
 @small-upper-on: false; 
 @small-only-on: false; 
@@ -12,10 +15,18 @@
 @gigantic-on: false;
 // ------------ Grid --------------
 @col-number: 12;
-@offset-support: false; 
+@offset-support: true; 
 
 @import "grid.less";
 // --------- Typography -----------
-@small-headings-on: false;
+@small-typography-on: true;
 @import "typography.less";
-
+// --------- Structure ------------
+@import "structure.less";
+// ---------- Navigation ----------
+@nav-button-list-on: true;
+@aside-on: true;
+@aside-width: 10;
+@navbar-on: true;
+@navbar-height: 2.5;
+@import "navigation.less";

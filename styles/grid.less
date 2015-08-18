@@ -1,17 +1,3 @@
-
-
-
-// responsive modes
-@small-upper-on: false; 
-@small-only-on: false; 
-@medium-upper-on: false; 
-@medium-only-on: false; 
-@large-upper-on: false;
-@large-only-on: false;
-@gigantic-on: false;
-
-@offset-support: false; 
-
 .generate-columns(@selector, @i: 1) when (@i =< @col-number) {
     .@{selector}-@{i} {
         width: (@i * 100% / @col-number);

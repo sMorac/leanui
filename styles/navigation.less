@@ -1,0 +1,89 @@
+& when(@navbar-on = true){
+    .lean-body{
+        nav{
+            background-color: #fafafa;
+            color: #666;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 1;
+            height: @navbar-height * 1em;
+            p{}
+            
+        }
+    }
+    .lean-body.with-fixed-nav{
+        nav{
+            position: fixed;
+            left: 0;
+        }
+    }
+    .lean-body.with-fixed-nav.on-top{
+        padding-top: @navbar-height * 1em;
+        nav{
+            top: 0;
+            border-bottom: 1px solid #efefef;
+        }
+    }
+    .lean-body.with-fixed-nav.on-bottom{
+        padding-bottom: @navbar-height * 1em;
+        nav{
+            bottom: 0; 
+            border-top: 1px solid #efefef;
+        }
+    }
+}
+& when(@aside-on = true){
+    .lean-body.with-aside{
+        aside{
+            position: fixed;
+            width: @aside-width * 1em; 
+            height: 100%;
+            background-color: #fafafa;
+            color: #666;
+            & when(@nav-button-list-on = true){
+               ul.nav-button-list{
+                    flex-direction: column;
+               } 
+            }
+        }
+    }
+    .lean-body.with-aside.on-left{
+        aside{ 
+            left: 0;
+            border-right: 1px solid #efefef;
+        }
+        padding-left: @aside-width * 1em;
+    }
+    .lean-body.with-aside.on-right{
+        aside{ 
+            right: 0; 
+            border-left: 1px solid #efefef;
+        }
+        padding-right: @aside-width * 1em;
+    }
+}
+& when(@nav-button-list-on = true){
+    .lean-body{
+        ul.nav-button-list{
+            list-style: none;
+            display: flex; 
+            padding: 0; 
+            margin: 0;
+            justify-content: flex-start;
+            li{
+                padding: ((@navbar-height - 1)/2 * 1em) 1.5em; 
+                display: inline;
+                width: auto;
+                margin: 0;
+                color: #999;
+                line-height: 1em;
+                text-align: center;
+            }
+            li:hover,li.active{
+                background-color: #999;
+                color: #fafafa;
+                cursor: pointer; 
+            }
+        }
+    }
+}

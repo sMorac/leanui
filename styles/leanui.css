@@ -128,6 +128,10 @@ optgroup { font-weight: bold;}
 table { border-collapse: collapse; border-spacing: 0; }
 td,th { padding: 0; }
 
+.lean-body {
+  max-width: 1440px;
+  margin: auto;
+}
 .lean-grid {
   display: flex;
   flex-direction: row;
@@ -142,38 +146,74 @@ td,th { padding: 0; }
 .lean-grid .all-1 {
   width: 8.33333333%;
 }
+.lean-grid .all-offset-1 {
+  margin-left: 8.33333333%;
+}
 .lean-grid .all-2 {
   width: 16.66666667%;
+}
+.lean-grid .all-offset-2 {
+  margin-left: 16.66666667%;
 }
 .lean-grid .all-3 {
   width: 25%;
 }
+.lean-grid .all-offset-3 {
+  margin-left: 25%;
+}
 .lean-grid .all-4 {
   width: 33.33333333%;
+}
+.lean-grid .all-offset-4 {
+  margin-left: 33.33333333%;
 }
 .lean-grid .all-5 {
   width: 41.66666667%;
 }
+.lean-grid .all-offset-5 {
+  margin-left: 41.66666667%;
+}
 .lean-grid .all-6 {
   width: 50%;
+}
+.lean-grid .all-offset-6 {
+  margin-left: 50%;
 }
 .lean-grid .all-7 {
   width: 58.33333333%;
 }
+.lean-grid .all-offset-7 {
+  margin-left: 58.33333333%;
+}
 .lean-grid .all-8 {
   width: 66.66666667%;
+}
+.lean-grid .all-offset-8 {
+  margin-left: 66.66666667%;
 }
 .lean-grid .all-9 {
   width: 75%;
 }
+.lean-grid .all-offset-9 {
+  margin-left: 75%;
+}
 .lean-grid .all-10 {
   width: 83.33333333%;
+}
+.lean-grid .all-offset-10 {
+  margin-left: 83.33333333%;
 }
 .lean-grid .all-11 {
   width: 91.66666667%;
 }
+.lean-grid .all-offset-11 {
+  margin-left: 91.66666667%;
+}
 .lean-grid .all-12 {
   width: 100%;
+}
+.lean-grid .all-offset-12 {
+  margin-left: 100%;
 }
 .lean-grid.no-gutter .col {
   padding-left: 0;
@@ -183,6 +223,7 @@ td,th { padding: 0; }
 }
 .lean-body h* {
   line-height: 1.4;
+  text-rendering: optimizeLegibility;
 }
 .lean-body h1 {
   font-size: 3em;
@@ -213,4 +254,132 @@ td,th { padding: 0; }
   font-size: 1em;
   margin-top: 0.16666667em;
   margin-bottom: 0.08333333em;
+}
+.lean-body p {
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  font-size: 1em;
+  margin: 0.16666667em 0 0.16666667em 0;
+}
+@media only screen and (max-width: 64em) {
+  .lean-body h* {
+    line-height: 1.3;
+  }
+  .lean-body h1 {
+    font-size: 2.5em;
+    margin-top: 0.41666667em;
+    margin-bottom: 0.20833333em;
+  }
+  .lean-body h2 {
+    font-size: 2em;
+    margin-top: 0.33333333em;
+    margin-bottom: 0.16666667em;
+  }
+  .lean-body h3 {
+    font-size: 1.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.125em;
+  }
+  .lean-body h4 {
+    font-size: 1.25em;
+    margin-top: 0.20833333em;
+    margin-bottom: 0.10416667em;
+  }
+  .lean-body h5 {
+    font-size: 1.1em;
+    margin-top: 0.18333333em;
+    margin-bottom: 0.09166667em;
+  }
+  .lean-body h6 {
+    font-size: 1em;
+    margin-top: 0.16666667em;
+    margin-bottom: 0.08333333em;
+  }
+  .lean-body p {
+    line-height: 1.3;
+    font-size: 0.95em;
+    margin: 0.31666667em 0 0.15833333em 0;
+  }
+}
+.lean-panel {
+  width: auto;
+  box-sizing: border-box;
+  padding: 1.5em;
+  border: 1px solid #dfdfdf;
+  background-color: #fafafa;
+  color: #666;
+  border-radius: 5px;
+  margin: 1.5em;
+}
+.lean-body nav {
+  background-color: #fafafa;
+  color: #666;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  height: 2.5em;
+}
+.lean-body.with-fixed-nav nav {
+  position: fixed;
+  left: 0;
+}
+.lean-body.with-fixed-nav.on-top {
+  padding-top: 2.5em;
+}
+.lean-body.with-fixed-nav.on-top nav {
+  top: 0;
+  border-bottom: 1px solid #efefef;
+}
+.lean-body.with-fixed-nav.on-bottom {
+  padding-bottom: 2.5em;
+}
+.lean-body.with-fixed-nav.on-bottom nav {
+  bottom: 0;
+  border-top: 1px solid #efefef;
+}
+.lean-body.with-aside aside {
+  position: fixed;
+  width: 10em;
+  height: 100%;
+  background-color: #fafafa;
+  color: #666;
+}
+.lean-body.with-aside aside ul.nav-button-list {
+  flex-direction: column;
+}
+.lean-body.with-aside.on-left {
+  padding-left: 10em;
+}
+.lean-body.with-aside.on-left aside {
+  left: 0;
+  border-right: 1px solid #efefef;
+}
+.lean-body.with-aside.on-right {
+  padding-right: 10em;
+}
+.lean-body.with-aside.on-right aside {
+  right: 0;
+  border-left: 1px solid #efefef;
+}
+.lean-body ul.nav-button-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+}
+.lean-body ul.nav-button-list li {
+  padding: 0.75em 1.5em;
+  display: inline;
+  width: auto;
+  margin: 0;
+  color: #999;
+  line-height: 1em;
+  text-align: center;
+}
+.lean-body ul.nav-button-list li:hover,
+.lean-body ul.nav-button-list li.active {
+  background-color: #999;
+  color: #fafafa;
+  cursor: pointer;
 }
